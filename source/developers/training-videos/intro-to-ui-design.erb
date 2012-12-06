@@ -1,0 +1,84 @@
+---
+title: Intro to UI Design
+active_menu_item: developers
+class_name: training_videos
+active_submenu: training_videos
+active_submenu_item: /developers/training-videos/intro-to-ui-design
+---
+
+<% content_for :submenu do %>
+  <nav class="sub">
+    <div class="container">
+      <ul class="clearfix">
+        <li class="active"><a href="/developers/training-videos">Videos</a></li>
+        <li><a href="/developers/documentation">Documentation</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="https://getsatisfaction.com/application_craft" target="_blank">Forum</a></li>
+        <li><a href="http://portal.applicationcraft.com" target="_blank">Bug Tracker</a></li>
+      </ul>
+    </div>
+  </nav>
+<% end %>
+
+<% content_for :above_aside do %>
+  <h4>Training Videos</h4>
+<% end %>
+
+<%= training_video 'pHaov7DW4kM', :title => 'Overview', :time => '4:30',
+                                  :references => [
+                                    { :url => '/revisions/current/docs/user-guide/index.html?page2.htm',
+                                      :title => 'IDE Overview' },
+                                    { :url => '/revisions/current/docs/user-guide/index.html?absolute_and_relative_layout.htm',
+                                      :title => 'Layout Mode' }
+                                  ] %>
+
+<%= training_video 'EGKg4-MAwS0', :title => 'Pages &amp; Page navigation', :time => '1:35',
+                                  :references => [
+                                    { :url => '/revisions/current/docs/user-guide/index.html?pagesintro.htm',
+                                      :title => 'Pages' },
+                                    { :url => '/revisions/current/docs/user-guide/index.html?page2.htm',
+                                      :title => 'Page Functions' }
+                                  ] %>
+
+<%= training_video '3vpuYfz_Da8', :title => 'Repeating Widgets across multiple pages', :time => '1:00',
+                                  :references => [
+                                    { :url => '/revisions/current/docs/user-guide/index.html?repeating_widgets_across_multi.htm',
+                                      :title => 'Repeating Widgets' }
+                                  ] %>
+
+
+<%= training_video 'pUY3PXct_wk', :title => 'Switching between Apps seamlessly & the Global Data Store', :time => '2:17',
+                                  :references => [
+                                    { :url => '/revisions/current/docs/user-guide/index.html?global_data_pool.htm',
+                                      :title => 'Global Data Pool' },
+                                    { :url => '/revisions/current/docs/user-guide/index.html?switchapp.htm',
+                                      :title => 'Switch App' },
+                                    { :url => '/revisions/current/docs/user-guide/index.html?parentapp.htm',
+                                      :title => 'Parent App' }
+                                  ] %>
+
+
+<%= training_video 'kaCk6QuBdHg', :title => 'Embedding one App inside another', :time => '3:02',
+                                  :references => [
+                                    { :url => '/revisions/current/docs/user-guide/index.html?embed_app.htm',
+                                      :title => 'Embed Widget' }
+                                  ] %>
+
+
+<%= training_video 'UZr8PcKxE_c', :title => 'Time Saving Tips & Tricks', :time => '3:48',
+                                  :references => [
+                                    { :url => '/revisions/current/docs/user-guide/index.html?versions.htm',
+                                      :title => 'Version Control' },
+                                    { :url => '/revisions/current/docs/user-guide/index.html?selection__multi_selection.htm',
+                                      :title => 'Multiple Selection' },
+                                    { :url => '/revisions/current/docs/user-guide/index.html?clipboard.htm',
+                                      :title => 'Copy &amp; Paste' },
+                                    { :url => '/revisions/current/docs/user-guide/index.html?right_click_parent_container_s.htm',
+                                      :title => 'Parent Container Selections' }
+                                  ] %>
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+---
+old_url: getgroupslist.htm
+title: "getGroupsList()"
+active_menu_item: developers
+class_name: developers
+full_width: true
+---
+
+
+{objArray} **getGroupsList** ()
+
+## Description
+
+This returns an object array of the below structure.
+
+    {
+        id_group: group ID, 
+        name: group_name
+    }
+     
+   
+
+## See Also
+
+ - [getLatestError()](/developers/documentation/scripting-apis/server-side-api/ssj-object/miscellaneous/getlatesterror)
+

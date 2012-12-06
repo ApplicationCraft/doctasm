@@ -1,0 +1,149 @@
+#coupon {
+  margin: 40px 0;
+  padding: 6px;
+  background-color: #FFF;
+  text-align: center;
+  @include border-radius(2px);
+  @include box-shadow(1px 1px 3px #666);
+
+  @include apply-to(more-than, ipad-portrait) {
+    margin: 25px 10px;
+  }
+
+  input[type=text] {
+    width: 56%;
+  }
+
+  > div {
+    border: 5px dashed #666;
+    padding: 10px 16px;
+
+    @include apply-to(more-than, ipad-portrait) {
+      background: white image-url("barcode.jpg") no-repeat 20px center;
+      padding: 30px 30px 30px 130px;
+    }
+
+    h1 {
+      font: 18px gotham_bookregular;
+
+      @include apply-to(more-than, ipad-portrait) {
+        font-size: 26px;
+      }
+
+      span.logo {
+        font: 22px gotham_bookregular;
+        text-transform: uppercase;
+
+        @include apply-to(more-than, ipad-portrait) {
+          font-size: 46px;
+        }
+
+        > span {
+          color: $red;
+          font-family: gotham_mediumregular;
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 14px;
+    }
+
+    p.terms {
+      margin-top: 40px;
+      font-size: 12px;
+      text-align: left;
+    }
+
+    #referral-url {
+      margin-top: 20px;
+
+      code {
+        display: block;
+      }
+    }
+  }
+}
+
+
+body.referral-program {
+
+  header {
+    background: #666 image-url('bgcloth.png') repeat;
+    font-size: 0.8em;
+    padding: 20px 10px;
+
+    @include apply-to(more-than, ipad-portrait) {
+      padding: 20px 0;
+    }
+
+    div {
+      margin: 0 auto;
+      text-align: center;
+
+      h1 {
+        color: $cream;
+        font: 26px gotham_bookregular;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+
+        @include apply-to(more-than, ipad-portrait) {
+          font-size: 52px;
+        }
+      }
+
+      h2 {
+        color: $cream;
+        margin: 0;
+        font-size: 14px;
+
+        @include apply-to(more-than, ipad-portrait) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: #F04A3B;
+  }
+
+  #referral-form {
+    input[type=submit] {
+      height: 42px;
+      margin-top: 0;
+    }
+  }
+
+  #referral-text {
+    margin-bottom: 50px;
+
+    > div {
+      margin: 0 10px;
+
+      @include apply-to(more-than, ipad-portrait) {
+        float: left;
+        width: 42%;
+
+        &:first-child {
+          margin-right: 40px;
+        }
+
+        &:last-child {
+          margin-left: 40px;
+        }
+      }
+      @include apply-to(more-than, ipad-landscape) {
+        width: 44%;
+      }
+    }
+  }
+
+}

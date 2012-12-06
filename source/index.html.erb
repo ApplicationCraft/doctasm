@@ -1,0 +1,128 @@
+---
+title: Web Based Documentation
+class_name: home
+full_width: true
+active_menu_item: home
+---
+
+<% unless current_page.app.development? %>
+  <!-- Google Analytics Content Experiment code -->
+  <script>function utmx_section(){}function utmx(){}(function(){var
+  k='23630340-0',d=document,l=d.location,c=d.cookie;
+  if(l.search.indexOf('utm_expid='+k)>0)return;
+  function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+  indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+  length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+  '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+  '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+  '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+  valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+  '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+  </script><script>utmx('url','A/B');</script>
+  <!-- End of Google Analytics Content Experiment code -->
+<% end %>
+
+
+<header>
+  <div class="container">
+    <div class="carousel" data-paginate data-autoplay data-transition="flip">
+
+      <section id="slide1" class="clearfix">
+        <div>
+          <div>
+            <p>Viagra</p>
+            <p>for</p>
+            <p>documentation!</p>
+          </div>
+          <div>
+            <p>If you're having trouble getting your documentation up, daily use of Doctasm could change your life.</p>
+          </div>
+          <div>
+            <%= image_tag 'flourish.gif', :width => 174, :height => 28 %>
+          </div>
+        </div>
+        <div>
+          <%= image_tag "home/slides/slide1.gif", :width => 300, :alt => "Visual Development in the Cloud" %>
+        </div>
+      </section>
+
+      
+
+    </div>
+  </div>
+</header>
+
+
+<section id="price-banner" class="clearfix">
+  <div class="container">
+    <div>only <span>$14</span> per month</div>
+    <div class="nofade"><a href="/get-started">
+      <p>Try it for Free!</p>
+      <p><span>&#x2605;</span> 14 day free trial <span>&#x2605;</span></p>
+    </a></div>
+    <div>
+      <a href="http://www.youtube.com/v/XcGx6F7Wql0?autoplay=1&hd=1&fs=1&showsearch=0&rel=0&" class="fancybox fancybox.iframe">
+        Watch the intro video...
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="content">
+  <div class="container">
+
+    <section class="feature clearfix">
+      <div>
+        <h2>User Guides, Product Manuals, Tutorials ...</h2>
+        <p>A piece of software, a food processor, a car owner's manual, a self-assembly furniture guide, a cardio-pulmonary resuscitation guide, a recipe book - no matter what you want to document. So if your customer is up shit creek, they've got a paddle.<a href="/product">Learn more &raquo;</a></p>
+      </div>
+      <div><%= image_tag "home/feature2.png", :width => 493, :height => 347, :alt => 'Build prototypes, front-ends and full-blown apps' %></div>
+    </section>
+
+    <section class="feature clearfix">
+      <div><%= image_tag "home/feature1.png", :width => 513, :height => 638, :alt => '100% cloud based visual development' %></div>
+      <div>
+        <h2><strong>100%</strong> Browser Based</h2>
+        <p>Finally, no need to install any software anywhere, so whether you're a PC, MAC or Linux user, you're happy. <a href="/product">Learn more &raquo;</a></p>
+      </div>
+    </section>
+
+    <!-- <div class="track">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> -->
+
+
+    <section class="feature clearfix">
+      <div>
+        <h2>Publish to Desktop, Mobile &amp; Apps</h2>
+        <p>Doctasm guides can run as both Desktop and Mobile and - get this - you can convert your documentation into an Appstore ready iOS, Android and Windows Phone Apps with the click of a button.<a href="/product">Learn more &raquo;</a></p>
+      </div>
+      <div><%= image_tag "home/feature3.png", :width => 498, :height => 409, :alt => 'Deploy as a web app and to the App Stores' %></div>      
+    </section>
+
+    <section class="feature clearfix">
+      <div><%= image_tag "home/feature4.png", :width => 461, :height => 419, :alt => 'Everything is HTML5, CSS and Javascript' %></div>      
+      <div><h2>Deploy Anywhere</h2>
+        <p>Doctasm lets you deploy your App either on Doctasm itself or you can download your docs and install them on your own servers or in your own site. And you can deploy as Mobile Apps!<a href="/product">Learn more &raquo;</a></p>
+      </div>
+    </section>
+
+    <section class="feature clearfix">
+      <div>
+        
+
+      </div>
+      <div id="latest">
+        <article>
+          <h2>From our Blog...</h2>
+          <h3><a href="<%= blog.articles.first.url %>"><%= blog.articles.first.title %></a></h3>
+          <p><%= truncate strip_tags(blog.articles.first.body), :length => 220, :strip_tags => true %> <a href="<%= blog.articles.first.url %>"><nobr>read more &raquo;</nobr></a></p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+</section>

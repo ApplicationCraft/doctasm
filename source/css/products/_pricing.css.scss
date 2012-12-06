@@ -1,0 +1,107 @@
+body.pricing {
+
+  #overview-sections {
+    display: none;
+    @include apply-to(more-than, ipad-portrait) {
+      display: block;
+    }
+  }
+
+  #pricing-section {
+    .container {
+      background: transparent image-url('products/track-mobile.png') no-repeat center 30px;
+      font-size: 0.8em;
+      height: 984px;
+
+      @include apply-to(more-than, ipad-portrait) {
+        background-image: image-url("products/track.png");
+        background-position: -52px 65px;
+        height: 770px;
+        margin-top: 0;
+      }
+      @include apply-to(more-than, ipad-landscape) {
+        background-position: left 65px;
+        background-size: inherit;
+      }
+    }
+
+    article {
+      font-size: 16px;
+      text-align: center;
+      padding: 0 20px;
+
+      @include apply-to(more-than, iphone-landscape) {
+        padding: 0 30px;
+        font-size: 18px;
+      }
+      @include apply-to(more-than, ipad-portrait) {
+        text-align: left;
+        font-size: 16px;
+        padding: 0 20px 0 346px;
+      }
+      @include apply-to(more-than, ipad-landscape) {
+        padding: 0 20px 0 440px;
+      }
+
+      h3 {
+        font: 32px gotham_bookregular;
+        text-transform: uppercase;
+        margin: 0;
+        display: none;
+
+        @include apply-to(more-than, ipad-portrait) {
+          display: block;
+        }
+      }
+
+      p {
+        margin-top: 0;
+      }
+
+      a {
+        font-family: gotham_mediumregular;
+        text-transform: uppercase;
+      }
+
+      &:nth-child(1) {
+        padding-top: 122px;
+
+        @include apply-to(more-than, iphone-landscape) {
+          padding-top: 130px;
+        }
+        @include apply-to(more-than, ipad-portrait) {
+          padding-top: 60px;
+        }
+      }
+
+      &:nth-child(2) {
+        padding-top: 180px;
+
+        @include apply-to(more-than, iphone-landscape) {
+          padding-top: 186px;
+        }
+        @include apply-to(more-than, ipad-portrait) {
+          padding-top: 58px;
+        }
+        @include apply-to(more-than, ipad-landscape) {
+          padding-top: 78px;
+        }
+      }
+
+      &:nth-child(3) {
+        padding-top: 148px;
+
+        @include apply-to(more-than, iphone-landscape) {
+          padding-top: 172px;
+        }
+        @include apply-to(more-than, ipad-portrait) {
+          padding-top: 88px;
+        }
+        @include apply-to(more-than, ipad-landscape) {
+          padding-top: 110px;
+        }
+      }
+    }
+  }
+
+}
