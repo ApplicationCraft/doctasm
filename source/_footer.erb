@@ -95,19 +95,3 @@
     <%= javascript_include_tag 'main' %>
     <%= yield_content :foot %>
 
-    <% if !current_page.app.development? && !current_page.path.start_with?('developers/documentation') %>
-      <script>
-        var _gaq=[['_setAccount','UA-11680203-1'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-      </script>
-    <% end %>
-
-    <div id="getsat-widget-2621"></div>
-    <script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
-    <script type="text/javascript">
-      if (typeof GSFN !== "undefined" && !/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        GSFN.loadWidget(2621,{"containerId":"getsat-widget-2621"});
-      }
-    </script>
