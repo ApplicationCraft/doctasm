@@ -112,17 +112,17 @@ section#slide1 {
       @include apply-to(more-than, ipad-landscape) {
         margin-top: 50px;
         width: 52%;
-        padding-right: 38px;
+        padding-right: 38px;       
       }
 
-      // Qualifing text
+      // Qualifying text
       div:nth-child(2) p {
         width: 320px;
         text-align: center;
         margin: 50px 0 0 100px;
 
         @include apply-to(more-than, iphone-landscape) {
-          font-size: 20px;
+          font-size: 22px;
           margin: 14px auto;
         }
         @include apply-to(more-than, ipad-landscape) {
@@ -141,12 +141,12 @@ section#slide1 {
         p:first-child {
           margin-bottom: 3px;
           font-size: 40px;
-
           @include apply-to(more-than, iphone-landscape) {
             font-size: 40px;
           }
           @include apply-to(more-than, ipad-landscape) {
-            font-size: 58px;
+            font-size: 52px;   
+            line-height: 1;                      
           }
         }
 
@@ -158,7 +158,8 @@ section#slide1 {
             font-size: 36px;
           }
           @include apply-to(more-than, ipad-landscape) {
-            font-size: 48px;
+            font-size: 52px;
+            line-height: 1.3;              
           }
         }
 
@@ -170,7 +171,8 @@ section#slide1 {
             font-size: 30px;
           }
           @include apply-to(more-than, ipad-landscape) {
-            font-size: 58px;
+            font-size: 52px;
+            line-height: 1.3;              
           }
         }
       }
