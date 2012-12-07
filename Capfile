@@ -1,9 +1,9 @@
 load 'deploy'
 require 'capistrano/ext/multistage'
 
-set :application, "site"
+set :application, "doctasm"
 set :scm, :git
-set :repository, "git@github.com:ApplicationCraft/applicationcraft.com.git"
+set :repository, "git@github.com:ApplicationCraft/doctasm.git"
 set :use_sudo, false
 set :user, "middleman"
 
