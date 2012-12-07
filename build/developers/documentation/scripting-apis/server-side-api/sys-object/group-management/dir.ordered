@@ -1,8 +1,0 @@
-getgroupbyid
-creategroup
-updategroup
-deletegroup
-addtogroup
-removefromgroup
-getgroupmembers
-getgroupslist
