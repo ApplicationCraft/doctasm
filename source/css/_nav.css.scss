@@ -163,7 +163,7 @@ nav.main {
 
   // Navigation pointer
   .active {
-    background: $cream image-url('products/nav-pointer.gif') no-repeat center 16px;
+    background: $cream image-url('products/nav-pointer.png') no-repeat center 16px;
     @include apply-to(more-than, ipad-portrait) {
       background-position: center 28px;
     }
@@ -180,7 +180,7 @@ body.home nav.main {
   box-shadow: none;
 
   .active {
-    background-image: image-url('home/nav-pointer.gif');
+    background-image: image-url('home/nav-pointer.png');
   }
 }
 
@@ -188,7 +188,7 @@ body.home nav.main {
 // Sub menu
 // -------------------------------------------------------------------------------------------------
 nav.sub {
-  background-color: #EFEDE7;
+  background-color: #90c2c8;
   padding: 12px 0 10px;
   box-shadow: 0px 0px 6px #888;
 

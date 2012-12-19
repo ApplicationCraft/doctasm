@@ -23,10 +23,9 @@ body.products, body.services, , body.mobile-build {
         display: none;
         @include apply-to(more-than, iphone-landscape) {
           display: block;
-          max-width: 36%;
         }
         @include apply-to(more-than, ipad-portrait) {
-          max-width: 32%;
+          margin: 40px 40px 0 0;
         }
       }
 
@@ -51,45 +50,27 @@ body.products, body.services, , body.mobile-build {
             margin: 0 0 26px;
           }
         }
-
-        ul {
-          @include no-list-style;
-          li {
-            float: left;
-            width: 250px;
-
-            @include apply-to(more-than, iphone-landscape) {
-              width: 210px;
-            }
-            @include apply-to(more-than, ipad-landscape) {
-              width: 300px;
-            }
-
-            &:nth-child(1), &:nth-child(3) {
-              margin-right: 40px;
-            }
-
-            h4 {
-              font: 16px gotham_mediumregular;
-              margin-bottom: 0;
-            }
-            p {
-              font-size: 14px;
-              margin: 10px 0 0 0;
-            }
-          }
+        h4 {
+          font: 16px gotham_mediumregular;
+          margin-bottom: 5px;
         }
+        p {
+          font-size: 14px;
+          margin: 0px 0 0 0;
+        }        
       }
     }
   }
 
-  #overview-ui-builder {
+  #overview-standard-features {
     margin-top: 30px;
 
     @include apply-to(more-than, iphone-landscape) {
       margin: 60px 0 70px;
     }
 
+    .container > div { float: left; width: 320px;  }
+    .container > article { float: left; width: 650px;}
     .container {
       article {
         @include apply-to(more-than, iphone-landscape) {
@@ -99,15 +80,17 @@ body.products, body.services, , body.mobile-build {
 
       img {
         @include apply-to(more-than, iphone-landscape) {
-          margin-right: 20px;
+          margin: 100px 0 0 0;
+          width: 300px;
         }
       }
     }
   }
 
-  #overview-code-editor {
+  #overview-formatting {
     margin: 80px 0;
-
+    .container > div { float: left; width: 320px;  }
+    .container > article { float: left; width: 650px;}
     .container {
       article ul {
         @include apply-to(more-than, ipad-portrait) {
@@ -128,7 +111,8 @@ body.products, body.services, , body.mobile-build {
 
       img {
         @include apply-to(more-than, iphone-landscape) {
-          margin: 0 10px 0 40px;
+          margin: 100px 0 0 0;
+          width: 300px;
         }
       }
     }
@@ -137,6 +121,8 @@ body.products, body.services, , body.mobile-build {
   #overview-deployment {
     margin: 80px 0;
 
+    .container > div { float: left; width: 320px;  }
+    .container > article { float: left; width: 650px;}
     .container {
       article ul li {
         width: 230px;
@@ -151,7 +137,8 @@ body.products, body.services, , body.mobile-build {
 
       img {
         @include apply-to(more-than, iphone-landscape) {
-          margin: 0 40px 0 0;
+          margin: 100px 0 0 0;
+          width: 300px;
         }
       }
     }

@@ -1,11 +1,11 @@
 @import 'lib/carousel';
 
 header {
-  background: #666 image-url('bgcloth.png') repeat;
+  background: #3FA4B2 image-url('bgcloth.png') repeat;
   padding: 10px 0 20px;
 
   @include apply-to(more-than, ipad-portrait) {
-    padding: 50px 0;
+    padding: 30px 0;
   }
 
   section {
@@ -31,7 +31,7 @@ header {
         color: #F8F7EF;
         text-align: center;
         text-transform: uppercase;
-        line-height: 1.7em;
+        line-height: 1.4em;
         font: {
           family: 'gotham_thinregular';
           size: 14px;
@@ -77,14 +77,14 @@ header {
         margin: 20px 0 0px 150px;
 
         @include apply-to(more-than, ipad-landscape) {
-          margin: 50px 0 0 100px;
+          margin: 10px 0 20px 30px;
         }
         @include apply-to(more-than, ipad-portrait) {
-          width: 32%;
+          width: 40%;
         }
 
         img {
-          max-width: 78%;
+          max-width: 100%;
           @include apply-to(more-than, iphone-landscape) {
             max-width: 70%;
           }

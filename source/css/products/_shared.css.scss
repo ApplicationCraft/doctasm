@@ -1,7 +1,7 @@
 body.products {
 
   #overview-sections {
-    background: #666 image-url('bgcloth.png') repeat;
+    background: #3FA4B2 image-url('bgcloth.png') repeat;
     font-size: 0.8em;
 
     .container > h1 {
@@ -49,10 +49,11 @@ body.products {
           font-size: 18px;
           padding: 4px 0 0 0;
           margin: 0;
+          color: #ffffff;
         }
         p {
           margin: 4px 0 0 0;
-          color: #AAA;
+          color: #ffffff;
         }
 
         &:nth-child(1) a {

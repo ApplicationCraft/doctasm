@@ -7,18 +7,7 @@ active_menu_item: home
 
 <% unless current_page.app.development? %>
   <!-- Google Analytics Content Experiment code -->
-  <script>function utmx_section(){}function utmx(){}(function(){var
-  k='23630340-0',d=document,l=d.location,c=d.cookie;
-  if(l.search.indexOf('utm_expid='+k)>0)return;
-  function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-  indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-  length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-  '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-  '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-  '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-  valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-  '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-  </script><script>utmx('url','A/B');</script>
+
   <!-- End of Google Analytics Content Experiment code -->
 <% end %>
 
@@ -35,19 +24,14 @@ active_menu_item: home
             <p>Tutorials</p>
           </div>
           <div>
-            <p>Write beautiful documentation for absolutely anything and run it in a browser or as a mobile App.</p>
+            <p><strong>Write beautiful documentation for absolutely anything</p><p>Run in a browser</br> or as a mobile App.</strong></p>
           </div>
-          <div>
-            <%= image_tag 'flourish.gif', :width => 174, :height => 28 %>
-          </div>
+
         </div>
         <div>
-          <%= image_tag "home/slides/slide1.gif", :width => 300, :alt => "Visual Development in the Cloud" %>
+          <%= image_tag "home/slides/slide_unequal.png", :width => 400, :alt => "Documentation User Guides Manuals in the cloud" %>
         </div>
       </section>
-
-      
-
     </div>
   </div>
 </header>
@@ -77,14 +61,14 @@ active_menu_item: home
         <h2>Document Absolutely Anything</h2>
         <p>A piece of software, a food processor, a car owner's manual, a self-assembly furniture guide, a cardio-pulmonary resuscitation guide, a recipe book - you name it, Doctasm documents it.<a href="/product">Learn more &raquo;</a></p>
       </div>
-      <div><%= image_tag "home/feature2.png", :width => 493, :height => 347, :alt => 'Build prototypes, front-ends and full-blown apps' %></div>
+      <div><%= image_tag "home/ikea.png", :width => 400, :alt => 'Build prototypes, front-ends and full-blown apps' %></div>
     </section>
 
     <section class="feature clearfix">
-      <div><%= image_tag "home/feature1.png", :width => 513, :height => 638, :alt => '100% cloud based visual development' %></div>
+      <div><%= image_tag "home/coding.png", :width => 400, :alt => '100% cloud based visual development' %></div>
       <div>
         <h2><strong>100%</strong> Browser Based</h2>
-        <p>Finally, no need to install any software anywhere, so whether you're a PC, MAC or Linux user, you're happy. <a href="/product">Learn more &raquo;</a></p>
+        <p>Finally, no need to install any software anywhere, so whether you're a PC, MAC or Linux user, you're happy. </br><a href="/product">Learn more &raquo;</a></p>
       </div>
     </section>
 
@@ -100,11 +84,11 @@ active_menu_item: home
         <h2>Publish Docs to Desktop, Mobile &amp; Apps</h2>
         <p>Doctasm guides can run as both Desktop and Mobile and - get this - you can convert your documentation into an Appstore ready iOS, Android and Windows Phone Apps with the click of a button.<a href="/product">Learn more &raquo;</a></p>
       </div>
-      <div><%= image_tag "home/feature3.png", :width => 498, :height => 409, :alt => 'Deploy as a web app and to the App Stores' %></div>      
+      <div><%= image_tag "home/retroexercis.png", :width => 400, :alt => 'Deploy as a web app and to the App Stores' %></div>      
     </section>
 
     <section class="feature clearfix">
-      <div><%= image_tag "home/feature4.png", :width => 461, :height => 419, :alt => 'Everything is HTML5, CSS and Javascript' %></div>      
+      <div><%= image_tag "home/car.png", :width => 400, :alt => 'Everything is HTML5, CSS and Javascript' %></div>      
       <div><h2>Deploy it where you want it</h2>
         <p>Doctasm lets you deploy your App either on Doctasm itself or you can download your docs and install them on your own servers or in your own site. And you can deploy as Mobile Apps!<a href="/product">Learn more &raquo;</a></p>
       </div>

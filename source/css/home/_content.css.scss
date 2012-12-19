@@ -4,38 +4,6 @@
 section#content {
   padding: 0 25px;
 
-  // The tracking dots (disabled for now)
-  // .track {
-  //   display: none;
-  //   position: relative;
-
-  //   &:first-child {
-  //     left: 476px;
-  //     top: -50px;
-  //   }
-
-  //   div {
-  //     width: 10px;
-  //     height: 10px;
-  //     padding: 0;
-  //     margin: 0;
-  //     background-image: -moz-radial-gradient(center center, circle cover, #bbb, transparent 5px);
-  //     background-image: -webkit-radial-gradient(center center, circle cover, #bbb, transparent 5px);
-  //     background-image: -o-radial-gradient(center center, circle cover, #bbb, transparent 5px);
-  //     background-image: -ms-radial-gradient(center center, circle cover, #bbb, transparent 5px);
-  //     background-image: radial-gradient(center center, circle cover, #bbb, transparent 5px);
-  //     background-size: 10px 10px;
-
-  //     &:nth-child(2) {
-  //       left: 8px;
-  //     }
-  //     &:nth-child(3) {
-  //       left: 16px;
-  //     }
-  //   }
-  // }
-
-
   .feature {
     font-size: 16px;
     line-height: 1.5em;
@@ -64,18 +32,19 @@ section#content {
     div {
       @include apply-to(more-than, ipad-portrait) {
         float: left;
-        width: 50%;
+        width: 40%;
         img {
           max-width: 90%;
         }
       }
     }
 
-    // Feature 1 - User Guides etc etc
+    // Feature 1 - Document anything
     &:nth-child(1) {
       div:first-child {
         display: none;
-
+        width: 50%;
+        margin-right: 70px;
         @include apply-to(more-than, ipad-portrait) {
           display: block;
         }
@@ -84,33 +53,35 @@ section#content {
 
     // Feature 2 - 100% Browser Based
     &:nth-child(2) {
+      img {
+        margin-top:50px;
+      }
       div:last-child {
         display: none;
-
+        width: 50%;
         @include apply-to(more-than, ipad-portrait) {
           display: block;
           text-align: right;
-          margin-top: 20px;
         }
-      strong {
-        line-height: 1em;
-        font-size: 70px;
-        color: $blue;
-        display: block;
+        strong {
+          line-height: 1em;
+          font-size: 70px;
+          color: $blue;
+          display: block;
 
-        @include apply-to(more-than, ipad-landscape) {
-          font-size: 120px;
+          @include apply-to(more-than, ipad-landscape) {
+            font-size: 120px;       
+          }
         }
-      }
-        
       }
     }
 
-    // Feature 3 - Desktop, Mobile, Even Apps
+    // Feature 3 - Publish Docs to Desktop etc.
     &:nth-child(3) {
       div:first-child {
         display: none;
-
+        width: 50%;
+        margin-right: 70px;
         @include apply-to(more-than, ipad-portrait) {
           display: block;
           img {
@@ -124,11 +95,12 @@ section#content {
       }
     }
 
-    // Feature 4 - Deploy Anywhere
+    // Feature 4 - Deploy it where you want it
     &:nth-child(4) {
       div:last-child {
         display: none;
-
+        width: 50%;
+        
         @include apply-to(more-than, ipad-portrait) {
           display: block;
           text-align: right;
