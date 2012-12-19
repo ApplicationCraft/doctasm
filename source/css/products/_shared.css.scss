@@ -31,6 +31,7 @@ body.products {
           padding-left: 78px;
           height: 84px;
           width: 200px;
+          margin-left: 0px;
 
           @include apply-to(more-than, iphone-landscape) {
             width: 140px;
@@ -44,7 +45,6 @@ body.products {
             margin-right: 20px;
           }
         }
-
         h3 {
           font-size: 17px;
           text-transform: uppercase;
@@ -58,18 +58,17 @@ body.products {
           line-height: 1.2em;
           color: #e7e7e7;
         }
-
         &:nth-child(1) a {
-          background: transparent image-url('products/ui-builder.gif') no-repeat;
+          background: transparent image-url('products/standard.png') no-repeat;
         }
         &:nth-child(2) a {
-          background: transparent image-url('products/code-editor.gif') no-repeat;
+          background: transparent image-url('products/formatting.png') no-repeat;
         }
         &:nth-child(3) a {
-          background: transparent image-url('products/deployment.gif') no-repeat;
+          background: transparent image-url('products/deployment.png') no-repeat;
         }
         &:last-child a {
-          background: transparent image-url('products/extras.gif') no-repeat;
+          background: transparent image-url('products/advanced.png') no-repeat;
           @include apply-to(more-than, ipad-landscape) {
             margin-right: 0;
           }
