@@ -1,9 +1,23 @@
 ---
 title: Doctasm Services
-active_submenu: services
-active_submenu_item: /services#toc_0
+class_name: product
+active_menu_item: product
+full_width: true
 meta_keywords: services, documentation, tutorials, user guide, user manual, help
 ---
+
+<% content_for :submenu do %>
+  <nav class="sub">
+    <div class="container">
+      <ul class="clearfix">
+        <li clas="active"><a href="/product">Overview</a></li>      
+        <li><a href="/product/pricing">Pricing</a></li>
+        <li><a href="/product/testimonials">Testimonials</a></li>
+        <li class="active"><a href="/product/services">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+<% end %>
 
 ##Custom Styling
 If you have very specific styling requirements and do not want to configure it yourself, our team can put together almost any document and table of contents styling you want.

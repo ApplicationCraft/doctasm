@@ -1,6 +1,6 @@
 // Products Overview
 // =================================================================================================
-
+  
 body.products, body.services, , body.mobile-build {
 
   .back-top {
@@ -15,10 +15,13 @@ body.products, body.services, , body.mobile-build {
     }
   }
 
-  .overview-section {
-    .container {
-      padding: 0 10px;
 
+
+  .overview-section {
+
+    .container {
+
+      padding: 0 10px;
       img {
         display: none;
         @include apply-to(more-than, iphone-landscape) {
@@ -30,6 +33,12 @@ body.products, body.services, , body.mobile-build {
       }
 
       article {
+        background: rgba(248, 247, 239, 0.7);
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;      
+        border-color: rgba(63, 164, 178, 0.17);  
+        padding: 20px 20px 20px 20px;        
         h3 {
           color: #f36050;
           font: 26px gotham_bookregular;
@@ -69,10 +78,10 @@ body.products, body.services, , body.mobile-build {
       margin: 60px 0 70px;
     }
 
-    .container > div { float: left; width: 320px;  }
+    .container > div { float: left; width: 280px;  }
     .container > article { float: left; width: 650px;}
     .container {
-      article {
+      article {       
         @include apply-to(more-than, iphone-landscape) {
           margin-top: 10px;
         }
@@ -89,7 +98,7 @@ body.products, body.services, , body.mobile-build {
 
   #overview-formatting {
     margin: 80px 0;
-    .container > div { float: left; width: 320px;  }
+    .container > div { float: left; width: 280px;  }
     .container > article { float: left; width: 650px;}
     .container {
       article ul {
@@ -121,7 +130,7 @@ body.products, body.services, , body.mobile-build {
   #overview-deployment {
     margin: 80px 0;
 
-    .container > div { float: left; width: 320px;  }
+    .container > div { float: left; width: 280px;  }
     .container > article { float: left; width: 650px;}
     .container {
       article ul li {

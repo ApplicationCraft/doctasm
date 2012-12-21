@@ -19,10 +19,9 @@ section#content {
     h2 {
       font: 28px gotham_mediumregular;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin: 0 0 10px 0;
       @include apply-to(more-than, ipad-landscape) {
         font-size: 42px;
-        margin-bottom: 20px;
       }
     }
     p {
@@ -42,9 +41,16 @@ section#content {
     // Feature 1 - Document anything
     &:nth-child(1) {
       div:first-child {
+        background: rgba(248, 247, 239, 0.7);
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;      
+        border-color: rgba(63, 164, 178, 0.17);
+        padding: 20px 20px 20px 20px;
         display: none;
         width: 50%;
-        margin-right: 70px;
+
+        margin-right: 50px;
         @include apply-to(more-than, ipad-portrait) {
           display: block;
         }
@@ -54,9 +60,15 @@ section#content {
     // Feature 2 - 100% Browser Based
     &:nth-child(2) {
       img {
-        margin-top:50px;
+        margin-top:10px;
       }
       div:last-child {
+        background: rgba(248, 247, 239, 0.7);
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;      
+        border-color: rgba(63, 164, 178, 0.17);  
+        padding: 20px 20px 20px 20px;    
         display: none;
         width: 50%;
         @include apply-to(more-than, ipad-portrait) {
@@ -68,7 +80,6 @@ section#content {
           font-size: 70px;
           color: $blue;
           display: block;
-
           @include apply-to(more-than, ipad-landscape) {
             font-size: 120px;       
           }
@@ -79,8 +90,14 @@ section#content {
     // Feature 3 - Publish Docs to Desktop etc.
     &:nth-child(3) {
       div:first-child {
+        background: rgba(248, 247, 239, 0.7);
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;      
+        border-color: rgba(63, 164, 178, 0.17);
+        padding: 20px 20px 20px 20px;      
         display: none;
-        width: 50%;
+        width: 48%;
         margin-right: 70px;
         @include apply-to(more-than, ipad-portrait) {
           display: block;
@@ -88,16 +105,29 @@ section#content {
             max-width: 85%;
           }
         }
+        strong {
+          line-height: 1em;
+          font-size: 70px;
+          color: $red;
+          display: block;
+          @include apply-to(more-than, ipad-landscape) {
+            font-size: 97px;       
+          }
+        }        
       }
 
-      div:last-child {
-        margin-top: 20px;
-      }
     }
 
     // Feature 4 - Deploy it where you want it
     &:nth-child(4) {
       div:last-child {
+        background: rgba(248, 247, 239, 0.7);
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;      
+        border-color: rgba(63, 164, 178, 0.17);
+        padding: 20px 20px 20px 20px;   
+        margin-top: 40px;   
         display: none;
         width: 50%;
         
@@ -111,7 +141,7 @@ section#content {
       }
     }
 
-    // Feature 5 - You’d be crazy to go Native!
+    // Feature 5 - From our Blog
     &:nth-child(5) {
       div:first-child {
         float: left;
@@ -126,9 +156,12 @@ section#content {
 
         article {
           display: table;
-          border: 1px solid #CCC;
-          border-radius: 6px;
-          padding: 10px;
+        background: rgba(248, 247, 239, 0.9);
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;      
+        border-color: rgba(63, 164, 178, 0.17);
+        padding: 20px 20px 20px 20px;    
           font-size: 14px;
 
           @include apply-to(more-than, ipad-portrait) {
