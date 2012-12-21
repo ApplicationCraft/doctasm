@@ -99,4 +99,52 @@ body.products {
       }
     }
   }
+
+  #examples {
+     article {
+        background: rgba(248, 247, 239, 0.7);
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;      
+        border-color: rgba(63, 164, 178, 0.17);  
+        margin: 20px 20px 20px 20px;   
+        padding: 20px 20px 20px 20px;  
+        ul {
+          list-style-type:decimal; 
+          margin: 10px 0 0px 10px;     
+        }
+        img {
+          margin-top: 20px;
+        }
+        h3 {
+          color: #f36050;
+          font: 26px gotham_bookregular;
+          margin: 0 0 26px;
+          text-shadow: 1px 1px 3px #BBB;
+          text-transform: uppercase;
+          border-bottom: 3px solid #CCC;
+          padding-bottom: 10px;
+
+          @include apply-to(more-than, iphone-landscape) {
+            margin: 0;
+          }
+          @include apply-to(more-than, ipad-portrait) {
+            font-size: 32px;
+          }
+          @include apply-to(more-than, ipad-landscape) {
+            font-size: 36px;
+            margin: 0 0 26px;
+          }
+        }
+        h4 {
+          font: 17px gotham_mediumregular;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 15px;
+          margin: 0px 0 0 0;
+        }        
+      }
+  }
+
 }
