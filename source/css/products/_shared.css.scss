@@ -8,8 +8,9 @@ body.products {
       color: $cream;
       font: 40px gotham_thinregular;
       text-transform: uppercase;
-      padding: 28px 0 0;
+      padding: 26px 0 20px;
       margin: 0 auto;
+      width: 90%;
       text-align: center;
     }
 
@@ -24,20 +25,38 @@ body.products {
       img:nth-child(1) {
         float: left;
         width: 250px;
-        margin: 10px 0 10px -17px;
+        margin: 0px 0 10px -17px;
       }
       img:nth-child(2) {      
         float: left;
         width: 100px;
-        margin: 86px 0px 0px -174px;
+        margin: 76px 0px 0px -174px;
       }      
     }
+
+    #services-contact {
+      p {
+        color: $cream;
+        font: 20px gotham_thinregular;
+        width: 150px;
+        float: left;
+        margin: 111px 0px 0px 13px;
+      }
+      &:div {
+        float: left;
+        width: 300px;
+        padding: 20px 0 0 0;
+      }    
+    }    
 
     ul {
       @include no-list-style;
       padding: 40px 10px 79px;
       float: left;
       width: 560px;
+      #services-header {
+        width: 900px;
+      }
 
       @include apply-to(more-than, ipad-portrait) {
         margin-left: 32px;
@@ -53,20 +72,11 @@ body.products {
           display: block;
           padding-left: 78px;
           height: 84px;
-          width: 120px;
+          width: 170px;
           margin-left: 0px;
-
-          @include apply-to(more-than, iphone-landscape) {
-            width: 120px;
-            float: left;
-          }
-          @include apply-to(more-than, ipad-portrait) {
-            width: 120px;
-          }
-          @include apply-to(more-than, ipad-landscape) {
-            width: 170px;
-            margin-right: 20px;
-          }
+          float: left;  
+          width: 170px;
+          margin-right: 20px;                  
         }
         h3 {
           font-size: 17px;
@@ -146,5 +156,24 @@ body.products {
         }        
       }
   }
+
+
+  #services-feature {
+
+    .container > div { float: left; width: 280px;  }
+    .container > article { float: left; width: 600px; vertical-align: middle;}
+    .container {
+      article {       
+          margin: 50px 0 0 50px;
+      }
+      img {
+          margin: 40px 0 0 0;
+          vertical-align: middle;
+          width: 280px;
+      }
+
+    }
+  }
+
 
 }

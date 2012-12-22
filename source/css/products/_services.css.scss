@@ -1,0 +1,254 @@
+// Products Overview
+// =================================================================================================
+  
+body.services {
+
+  .back-top {
+    float: right;
+    position: relative;
+    top: 12px;
+    font-size: 12px;
+    color: #888;
+
+    @include apply-to(more-than, ipad-portrait) {
+      top: 21px;
+    }
+  }
+
+  .overview-section {
+
+    .container {
+
+      padding: 0 10px;
+      img {
+        display: none;
+        @include apply-to(more-than, iphone-landscape) {
+          display: block;
+        }
+        @include apply-to(more-than, ipad-portrait) {
+          margin: 40px 40px 0 0;
+        }
+      }
+
+      article {
+        background: rgba(248, 247, 239, 0.7);
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 3px;      
+        border-color: rgba(63, 164, 178, 0.17);  
+        padding: 20px 20px 20px 20px;        
+        h3 {
+          color: #f36050;
+          font: 26px gotham_bookregular;
+          margin: 0 0 26px;
+          text-shadow: 1px 1px 3px #BBB;
+          text-transform: uppercase;
+          border-bottom: 3px solid #CCC;
+          padding-bottom: 10px;
+
+          @include apply-to(more-than, iphone-landscape) {
+            margin: 0;
+          }
+          @include apply-to(more-than, ipad-portrait) {
+            font-size: 32px;
+          }
+          @include apply-to(more-than, ipad-landscape) {
+            font-size: 36px;
+            margin: 0 0 26px;
+          }
+        }
+        h4 {
+          font: 17px gotham_mediumregular;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 15px;
+          margin: 0px 0 0 0;
+        }        
+      }
+    }
+  }
+
+  #services-header {
+    margin-top: 30px;
+
+    @include apply-to(more-than, iphone-landscape) {
+      margin: 60px 0 70px;
+    }
+
+    .container > div { float: left; width: 280px;  }
+    .container > article { float: left; width: 650px;}
+    .container {
+      article {       
+        @include apply-to(more-than, iphone-landscape) {
+          margin-top: 10px;
+        }
+      }
+
+      img {
+        @include apply-to(more-than, iphone-landscape) {
+          margin: 100px 0 0 0;
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  #overview-formatting {
+    margin: 80px 0;
+    .container > div { float: left; width: 280px;  }
+    .container > article { float: left; width: 650px;}
+    .container {
+      article ul {
+        @include apply-to(more-than, ipad-portrait) {
+          margin-right: 240px;
+        }
+
+        li {
+          width: 235px;
+
+          @include apply-to(more-than, iphone-landscape) {
+            width: 208px;
+          }
+          @include apply-to(more-than, ipad-landscape) {
+            width: 285px;
+          }
+        }
+      }
+
+      img {
+        @include apply-to(more-than, iphone-landscape) {
+          margin: 100px 0 0 0;
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  #overview-deployment {
+    margin: 80px 0;
+
+    .container > div { float: left; width: 280px;  }
+    .container > article { float: left; width: 650px;}
+    .container {
+      article ul li {
+        width: 230px;
+
+        @include apply-to(more-than, iphone-landscape) {
+          width: 210px;
+        }
+        @include apply-to(more-than, ipad-landscape) {
+          width: 290px;
+        }
+      }
+
+      img {
+        @include apply-to(more-than, iphone-landscape) {
+          margin: 100px 0 0 0;
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  #overview-detail {
+    margin: 0 10px 60px;
+    @include apply-to(more-than, iphone-landscape) {
+      margin-bottom: 60px;
+    }
+
+    .container {
+      > h3 {
+        color: $red;
+        margin: 0 0 16px;
+        font: 34px gotham_bookregular;
+        text-shadow: 1px 1px 3px #BBB;
+        text-transform: uppercase;
+        border-bottom: 3px solid #CCC;
+        padding-bottom: 10px;
+      }
+
+        > ul {
+        @include no-list-style;
+
+        > li {
+          float: left;
+          width: 300px;
+          padding: 10px 0 0 0;
+
+          @include apply-to(more-than, iphone-landscape) {
+            width: 210px;
+            padding: 10px 40px 0 0;
+          }
+
+          &:nth-child(1), &:nth-child(2) {
+            @include apply-to(more-than, iphone-landscape) {
+              padding-bottom: 20px;
+            }
+          }
+          &:nth-child(2), &:nth-child(4) {
+            @include apply-to(more-than, iphone-landscape) {
+              padding-right: 0;
+            }
+            @include apply-to(more-than, ipad-landscape) {
+              padding-right: 40px;
+            }
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+
+          @include apply-to(more-than, ipad-portrait) {
+            width: 320px;
+            padding: 10px 40px 0 20px;
+          }
+          @include apply-to(more-than, ipad-landscape) {
+            width: 212px;
+            padding-left: 0;
+          }
+
+          h3 {
+            color: #000;
+            font: 16px gotham_mediumregular;
+            text-transform: uppercase;
+            text-shadow: 0px 1px 0px #fff;
+            margin: 0;
+            text-shadow: none;
+          }
+
+          > ul {
+            list-style-type: disc;
+            font-size: 14px;
+            color: #505258;
+            line-height: 19px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              margin: 0;
+              padding: 0;
+              margin-bottom: 10px;
+              background: image-url("details-bullet.png") no-repeat;
+              background-position: 0 7px;
+              padding-left: 10px;
+
+              h4 {
+                font-size: 14px;
+                margin-bottom: 0;
+              }
+
+              p {
+                margin: 0;
+                font-size: 13px;
+                color: #898c98;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

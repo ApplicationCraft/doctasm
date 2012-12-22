@@ -1,7 +1,7 @@
 // Products Overview
 // =================================================================================================
   
-body.products, body.services, , body.mobile-build {
+body.products, body.services {
 
   .back-top {
     float: right;
@@ -95,6 +95,31 @@ body.products, body.services, , body.mobile-build {
       }
     }
   }
+
+  #overview-services-header {
+    margin-top: 30px;
+
+    @include apply-to(more-than, iphone-landscape) {
+      margin: 60px 0 70px;
+    }
+
+    .container > div { float: left; width: 280px;  }
+    .container > article { float: left; width: 650px;}
+    .container {
+      article {       
+        @include apply-to(more-than, iphone-landscape) {
+          margin-top: 10px;
+        }
+      }
+
+      img {
+        @include apply-to(more-than, iphone-landscape) {
+          margin: 100px 0 0 0;
+          width: 300px;
+        }
+      }
+    }
+  }  
 
   #overview-formatting {
     margin: 80px 0;
