@@ -110,9 +110,10 @@ section#slide1 {
         width: 56%;
       }
       @include apply-to(more-than, ipad-landscape) {
-        margin-top: 30px;
+        margin-top: 6px;
+        margin-left: 5px;
         width: 52%;
-        padding-right: 38px;       
+        padding-right: 23px;       
       }
 
       // Qualifying text
